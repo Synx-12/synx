@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Comparison Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .pricing-table {
+            display: table;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            border-collapse: collapse;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .pricing-table .plan {
+            display: table-cell;
+            vertical-align: top;
+            width: 33.33%;
+            background-color: white;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+        .pricing-table .plan h2 {
+            background-color: #4CAF50;
+            color: white;
+            margin: 0;
+            padding: 20px;
+        }
+        .pricing-table .plan .price {
+            font-size: 2em;
+            font-weight: bold;
+            color: #4CAF50;
+            padding: 20px;
+        }
+        .pricing-table .plan ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .pricing-table .plan ul li {
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        .pricing-table .plan .cta {
+            padding: 20px;
+        }
+        .pricing-table .plan .cta button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        .pricing-table .plan .cta button:hover {
+            background-color: #45a049;
+        }
+        @media (max-width: 768px) {
+            .pricing-table .plan {
+                display: block;
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Pricing Plans</h1>
+    <div class="pricing-table">
+        <div class="plan">
+            <h2>Basic</h2>
+            <div class="price">$9.99/month</div>
+            <ul>
+                <li>Feature 1</li>
+                <li>Feature 2</li>
+                <li>Feature 3</li>
+                <li>Limited Support</li>
+            </ul>
+            <div class="cta">
+                <button>Choose Basic</button>
+            </div>
+        </div>
+        <div class="plan">
+            <h2>Pro</h2>
+            <div class="price">$19.99/month</div>
+            <ul>
+                <li>Feature 1</li>
+                <li>Feature 2</li>
+                <li>Feature 3</li>
+                <li>Priority Support</li>
+                <li>Advanced Analytics</li>
+            </ul>
+            <div class="cta">
+                <button>Choose Pro</button>
+            </div>
+        </div>
+        <div class="plan">
+            <h2>Premium</h2>
+            <div class="price">$29.99/month</div>
+            <ul>
+                <li>Feature 1</li>
+                <li>Feature 2</li>
+                <li>Feature 3</li>
+                <li>24/7 Support</li>
+                <li>Advanced Analytics</li>
+                <li>Custom Integrations</li>
+            </ul>
+            <div class="cta">
+                <button>Choose Premium</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
